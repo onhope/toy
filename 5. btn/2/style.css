@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  padding: 2rem 5rem;
+  background: blueviolet;
+  color: #fff;
+  font-size: 24px;
+  /* 유령의 집 */
+  position: relative;
+  transition: all 1s;
+}
+
+a::before {
+  content: "button";
+  background: crimson;
+  text-transform: uppercase;
+  /* 유령 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 중앙 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 회전 애니 */
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all .5s;
+}
+
+a::after {
+  content: "button";
+  background: mediumspringgreen;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 중앙 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  /* 회전 애니 */
+  transform: rotateX(270deg);
+  transform-origin: top;
+  transition: all 0.5s;
+  transition-delay: 0.25s;
+}
+
+a:hover::before,
+a:hover::after {
+  transform: rotateX(0);
+}
