@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: gold;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: black;
+  width: 450px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 10px 15px;
+}
+
+.card .img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.card .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.card .first::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/peng2.jpg);
+  background-size:100% 100%;
+  transform: translateX(-100%);
+  transition: 0.5s;
+}
+
+.card .first:hover::before {
+  object-fit: cover;
+  transform: translateX(0);
+}
+
+.card .first:hover img {
+  transform: translateX(100%);
+}
+
+.card .second::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./img/peng3.jpg);
+  background-size:100% 100%;
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+
+.card .second:hover::before {
+  object-fit: cover;
+  transform: translateY(0);
+}
+
+.card .second:hover img {
+  transform: translateY(100%);
+}
+
+.card .third::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 10px;
+  background-image: url(./img/peng1.jpg);
+  background-size:100% 100%;
+  transform: translateY(100%);
+  transition: 0.5s;
+}
+
+.card .third:hover::before {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(0);
+}
+
+.card .third:hover img {
+  transform: translateY(100%);
+}
+
+.card .content {
+  background: gold;
+  margin-top: 20px;
+  padding: 10px 25px;
+}
+
+.card .content h1 {
+  font-size: 25px;
+}
+
+.card .content p {
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.card .content a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+  background: black;
+  color: #fff;
+  margin: 5px 0;
+  padding: 10px;
+}
