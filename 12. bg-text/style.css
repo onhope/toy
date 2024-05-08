@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gold;
+  color: #000;
+}
+
+.heading {
+  font-size: 10rem;
+  font-weight: 900;
+  color: transparent;
+  background: url(./twinkle.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip : text;
+}
