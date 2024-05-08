@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.scroll-container {
+  width: 25rem;
+  background: crimson;
+  padding: 30px;
+}
+
+.scroll-div {
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+  background: black;
+}
+
+.scroll-object {
+  background: black;
+  padding: 20px;
+}
