@@ -1,0 +1,94 @@
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color : crimson;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.gray-heart {
+  position: relative;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background: gold;
+  transform: rotate(-45deg);
+}
+
+.gray-heart::before,
+.gray-heart::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: gold;
+}
+
+.gray-heart::before {
+  top: -50%;
+  left: 0;
+}
+
+.gray-heart::after {
+  left: 50%;
+  top: 0;
+}
+
+.red-heart {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: var(--main-color);
+  transform: rotate(-45deg);
+  visibility: hidden;
+}
+
+.red-heart::before,
+.red-heart::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--main-color);
+}
+
+.red-heart::before {
+  top: -50%;
+  left: 0;
+}
+
+.red-heart::after {
+  left: 50%;
+  top: 0;
+}
+
+/* js */
+.red-heart.animation {
+  animation: pop 0.9s linear;
+  visibility: visible;
+}
+
+.red-heart.fill-color {
+  background: var(--main-color);
+}
+
+/* ani */
+@keyframes pop {
+  100% {
+    transform: scale(1.7) rotate(-45deg);
+    opacity: 0;
+  }
+}
