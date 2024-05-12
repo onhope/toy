@@ -1,0 +1,54 @@
+body {
+  min-height: 90vh;
+  background-color: #FFAD90;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  
+}
+
+#btn {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 18px;
+  padding: 15px;
+  border: 2px solid #fff;
+  background: transparent;
+  border-radius: 5px;
+  color: #fff;
+}
+
+/* color-box 시작 */
+.color-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin-top: 70px;
+}
+
+.color-box .box {
+  background: #fff;
+  margin: 20px;
+}
+
+.color-box .box .bg {
+  width: 50px;
+  height: 50px;
+  background: red;
+  margin: 10px;
+}
+
+.color-box .box .hex-code {
+  text-align: center;
+  font-weight: 200;
+  font-size: 16px;
+  padding: 5px 0px;
+}
+/* color-box 끝 */
