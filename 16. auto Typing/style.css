@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black;
+  background: gold;
   font-family: "Black Han Sans", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -21,13 +21,13 @@ p {
 }
 
 .title {
-  color: gold;
+  color: crimson;
 }
 
 .typed-text {
-  color: darkgreen;
+  color: green;
 }
 
 .cursor {
-  color: darkgreen;
+  color: green;
 }
