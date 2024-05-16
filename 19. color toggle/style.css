@@ -1,0 +1,52 @@
+body {
+  /* 배경색 */
+  background: #fff;
+  /* 중앙정렬 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#switch {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+label {
+  display: block;
+  background: #000;
+  width: 100px;
+  height: 50px;
+  border-radius: 70px;
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+}
+
+label::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 70px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: .5s;
+}
+
+#switch:checked + label::after {
+  background: #000;
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+#switch:checked + label {
+  background: #fff;
+}
+
+label:active::after {
+  width: 60px;
+}
