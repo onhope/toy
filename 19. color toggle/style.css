@@ -1,7 +1,10 @@
+:root {
+  --main-color : black;
+  --second-color : white;
+}
+
 body {
-  /* 배경색 */
-  background: #fff;
-  /* 중앙정렬 */
+  background: var(--second-color);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16,9 +19,9 @@ body {
 
 label {
   display: block;
-  background: #000;
   width: 100px;
   height: 50px;
+  background: var(--main-color);
   border-radius: 70px;
   cursor: pointer;
   transition: 0.5s;
@@ -29,22 +32,22 @@ label::after {
   content: "";
   width: 40px;
   height: 40px;
-  background: #fff;
-  border-radius: 70px;
+  background: var(--second-color);
   position: absolute;
   top: 5px;
   left: 5px;
-  transition: .5s;
+  border-radius: 70px;
+  transition: 0.5s;
 }
 
 #switch:checked + label::after {
-  background: #000;
+  background: var(--main-color);
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }
 
 #switch:checked + label {
-  background: #fff;
+  background: var(--second-color);
 }
 
 label:active::after {
