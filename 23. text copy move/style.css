@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: gold;
+  font-family: sans-serif;
+  /* grid 정렬, 2:2 */
+  display: grid;
+  grid-template-columns: 2fr 2fr; 
+}
+
+/* 왼쪽 컨테이너 시작*/
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid white;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* 왼쪽 컨테이너 끝*/
+
+/* 오른쪽 컨테이너 시작 */
+.output-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: all 1s ease;
+  position: relative;
+}
+/* 오른쪽 컨테이너 끝 */
+
+/* 공통 */
+.btn {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+textarea {
+  margin: 10px;
+  outline: none;
+}
+button {
+  background: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+/* js */
+.added {
+  position: absolute;
+  bottom: 35px;
+  right: 20px;
+  text-align: center;
+  background: black;
+  color: white;
+  width: 200px;
+  height: 50px;
+}
