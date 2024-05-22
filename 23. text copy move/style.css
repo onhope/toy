@@ -64,6 +64,7 @@ button {
   bottom: 35px;
   right: 20px;
   text-align: center;
+  line-height: 50px;
   background: black;
   color: white;
   width: 200px;
