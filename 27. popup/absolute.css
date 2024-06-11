@@ -1,0 +1,26 @@
+.child:nth-of-type(2) {
+  position: absolute;
+  top: auto;
+  left: auto;
+  bottom: 0;
+  right: 0;
+}
+
+.parent {
+  /* position: relative; */
+  width: 100px;
+  height: 50px;
+  border : 2px solid blue;
+  color : blue;
+  background : lightskyblue;
+  padding: 1rem;
+}
+
+.child {
+  width: 70px;
+  height: 20px;
+  border : 2px dotted red;
+  color : red;
+  background : lightpink;
+  padding: 1rem;
+}
