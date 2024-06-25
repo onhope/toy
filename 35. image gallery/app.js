@@ -1,7 +1,7 @@
 const images = document.querySelectorAll("img");
-const imageWrapper = document.querySelector("#fullImg");
 const close = document.querySelector("span");
 const wrapper = document.querySelector("#wrapper");
+const fullImg = document.querySelector("#fullImg");
 
 images.forEach((img, index) => {
   img.addEventListener("click", () => {
@@ -15,5 +15,5 @@ close.addEventListener("click", () => {
 
 function openModal(pic) {
   wrapper.style.display = "flex";
-  imageWrapper.src = pic;
+  fullImg.src = pic;
 }
